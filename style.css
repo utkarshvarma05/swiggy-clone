@@ -1,0 +1,327 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #02060c;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: #ff5200;
+  padding: 0 16px 40px;
+}
+
+/* Navbar (Flexbox) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  color: #ff5200;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.btn-outline {
+  border: 1px solid #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.btn-dark {
+  background: #000;
+  padding: 12px 22px;
+  border-radius: 10px;
+}
+
+/* Search row */
+.search-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 40px 0;
+}
+
+.location,
+.search {
+  height: 46px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 13px;
+  background: #fff;
+}
+
+.location {
+  width: 240px;
+}
+
+.search {
+  width: 360px;
+}
+
+/* Hero cards (Grid) */
+.hero-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 190px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hero-text h2 {
+  font-size: 22px;
+  color: #3d4152;
+}
+
+.hero-text p {
+  font-size: 13px;
+  color: #7e808c;
+  margin: 4px 0 14px;
+  font-weight: bold;
+}
+
+.offer {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  color: #ff5200;
+  background: #fff1ec;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.explore {
+  display: block;
+  width: fit-content;
+  margin-top: 30px;
+  background: #ff5200;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 20px;
+}
+
+.hero-img {
+  font-size: 90px;
+}
+
+/* ===== SECTIONS ===== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.section {
+  margin-top: 60px;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.section-head h3 {
+  font-size: 22px;
+}
+
+.arrows {
+  display: flex;
+  gap: 10px;
+}
+
+.arrow {
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: #e2e2e7;
+  color: #02060c;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.arrow.active {
+  background: #d0d0d5;
+}
+
+/* ===== GRIDS ===== */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* Food: 6 per row, 2 rows */
+.food-grid {
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 30px;
+}
+
+/* Groceries: 6 per row */
+.grocery-grid {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+/* Dineout: 3 per row */
+.dine-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+  text-align: center;
+}
+
+.item p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #3d4152;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #f5f5f5;
+  font-size: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.square {
+  width: 100%;
+  max-width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 12px;
+  background: #f1f6ee;
+  font-size: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Dineout cards */
+.dine-img {
+  height: 180px;
+  border-radius: 16px;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c1 { background: #ffe3d1; }
+.c2 { background: #d9e4ef; }
+.c3 { background: #efe3d1; }
+
+.dine-card p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.container {
+  padding-bottom: 60px;
+}
+
+/* ===== RESPONSIVE (Media Queries) ===== */
+@media (max-width: 900px) {
+  .nav-links li:nth-child(1),
+  .nav-links li:nth-child(2) {
+    display: none;
+  }
+
+  .food-grid,
+  .grocery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .search-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .location,
+  .search {
+    width: 100%;
+  }
+
+  .hero-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .dine-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head h3 {
+    font-size: 18px;
+  }
+}
